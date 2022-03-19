@@ -1,0 +1,29 @@
+.navContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #323949;
+}
+.navContainer span{
+    font-size: 40px;
+    color: #ffffff
+}
+
+.navlist{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #dddddd;
+}
+.navlist li {
+    display: inline;
+    float: left;
+}
+.navlist a{
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    padding: 8px;
+    font-size: 20px;
+}

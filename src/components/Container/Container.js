@@ -1,7 +1,8 @@
 import styles from './Container.module.scss';
+import NavBar from '../NavBar/NavBar';
 
 const Container = props => {
-    return (<div className={styles.maxWidth}>{props.children}</div>);
+    return (<div><NavBar></NavBar><div className={styles.maxWidth}>{props.children}</div></div>);
     
 };
 
