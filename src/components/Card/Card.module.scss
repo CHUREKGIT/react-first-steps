@@ -1,5 +1,6 @@
 @import '../../styles/settings.scss';
 
+
 .card {
     position: relative;
     background: $color-light;
@@ -10,4 +11,40 @@
     display: flex;
     justify-content: space-between;
     font-weight: bold;
+    color: #000000;
+}
+
+.button {
+    background: #ffffff;
+    border: 0;
+    text-align: center;
+    border-radius: $radius;
+    cursor: pointer;
+    font-weight: 700;
+    transition: $transition;
+
+    &:hover {
+        background: darken(red, 5%);
+        color : #ffffff
+    }
+
+    &.danger {
+        background: $color-warning;
+
+        &:hover {
+            background: darken($color-warning, 5%);
+        }
+    }
+
+    &.transparent {
+        background: transparent;
+
+        &:hover {
+            color: darken($color-light, 20%);
+        }
+    }
+}
+
+.isFavorite {
+    color: red;
 }
