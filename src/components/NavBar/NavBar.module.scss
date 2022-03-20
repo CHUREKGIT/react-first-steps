@@ -1,3 +1,5 @@
+@import '../../styles/settings.scss';
+
 .navContainer{
     display: flex;
     flex-direction: row;
@@ -22,8 +24,14 @@
 }
 .navlist a{
     text-decoration: none;
-    color: #ffffff;
     display: block;
     padding: 8px;
     font-size: 20px;
+}
+.linkActive {
+    color: $color-warning;
+}
+
+.linkActive a {
+    color: $color-warning;
 }

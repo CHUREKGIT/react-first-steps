@@ -1,16 +1,13 @@
-import Hero from "../Hero/Hero"
-import SearchForm from "../SearchForm/SearchForm"
-import List from "../List/List"
+import Hero from "../Hero/Hero";
+import Lists from '../Lists/Lists';
+
 
 const Home = () =>{
-
     return (
         <div>
             <Hero></Hero>
-            <SearchForm></SearchForm>
-            <List></List>
+            <Lists/>
         </div>
     )
 }
-
 export default Home

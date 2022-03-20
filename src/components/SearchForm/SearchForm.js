@@ -7,13 +7,13 @@ import { addSearch } from '../../redux/store';
 
 
 
-const SearchForm = () => {
-    const [search, setSearch] = useState('');
+const SearchForm = props => {
+    const [search, setSearch] = useState(props.searchData);
     const dispatch = useDispatch();
     const handleSubmit = e => {
         e.preventDefault();
         dispatch(addSearch({search}));
-        setSearch('');
+        setSearch(search);
     }
 
     return (
